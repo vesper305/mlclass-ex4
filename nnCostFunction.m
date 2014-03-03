@@ -129,7 +129,7 @@ for t=1:m,
 	Theta1_grad = Theta1_grad + delta_2 * a1; % I don't know why a1 doesn't need to be transpost (brute force try)
 
 end;
-
+% Here , the X has been added an column of ones(m,1) before, so the a1 (a1=1) has been transpost to update the Theta1;
 % Theta1_grad = Theta1_grad ./ m;
 % Theta2_grad = Theta2_grad ./ m;
 
